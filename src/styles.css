@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Open+Sans&display=swap');
+
+/*** algemene styling ***/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*** fonts ***/
+h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    line-height: 55px;
+    font-family: 'Alkatra', cursive;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Alkatra', cursive;
+}
+
+
+/*** header ***/
+.head {
+    background: url("assets/globe.svg") no-repeat right;
+    flex-basis: 450px;
+    padding: 50px;
+    margin: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#search-field {
+    font-size: 20px;
+    padding: 10px;
+    height: 50px;
+    margin-right: -5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #06477F;
+    min-width: 275px;
+}
+
+.submit-button {
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #e1ecf4;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #06477F;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #06477F;
+    cursor: pointer;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #b3d3ea;
+    color: #2c5777;
+}
+
+.submit-button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.submit-button:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+}
+
+/*** main / output ***/
+main {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0px;
+}
+
+#country-title img {
+    max-width: 50px;
+}
+
+#warning {
+    color: red;
+    font-style: italic;
+}
+
+/*** footer ***/
+footer {
+    text-align: center;
+    font-size: 12px;
+}
